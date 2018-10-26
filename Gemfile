@@ -51,7 +51,7 @@ end
   gem 'twitter-bootstrap-rails', '3.2.2'
   gem 'bootstrap-material-design', '0.1.4'
   gem 'compass-rails','~> 2.0'
-  gem 'sprockets', '2.11.0'
+  gem 'sprockets', '4.0.0.beta8'
 
 
 
