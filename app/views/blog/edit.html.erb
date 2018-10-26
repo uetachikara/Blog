@@ -1,0 +1,7 @@
+<div class="center row">
+  <%= form_tag("/buns/#{@bun.id}", method: :patch) do %>
+    <h4>編集する</h4>
+    <textarea cols="40" name="text" placeholder="本文を入力してください" rows="20" class="textarea"><%= @bun.text %></textarea>
+    <input type="submit" value="SENT">
+  <% end %>
+</div>

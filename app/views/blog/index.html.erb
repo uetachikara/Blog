@@ -1,0 +1,14 @@
+<div class="center row" >
+  <% @buns.each do |bun| %>
+	    <p><%= bun.text %></p>
+	    <a class="waves-effect waves-light btn " href="/buns/<%= bun.id %>">SHOW</a>
+			<a class="waves-effect waves-light btn" href="/blog/<%= bun.id %>/edit">
+				<i class="material-icons left">EDIT</i>
+			</a>
+			<ul class="waves-effect waves-light btn"">
+				<i class="material-icons right">
+					<%= link_to 'DESTOROY', "/blog/#{bun.id}", method: :delete %>
+				</i>
+			</ul>
+  <% end %>
+</div>
